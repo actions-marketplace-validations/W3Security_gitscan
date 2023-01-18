@@ -1,22 +1,17 @@
-# Basic set up for three package managers
-
 version: 2
 updates:
-
-  # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: "weekly"
-
-  # Maintain dependencies for npm
-  - package-ecosystem: "npm"
+      interval: weekly
+    labels:
+      - Update dependencies
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-minor
+          - version-update:semver-patch
+  - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: "weekly"
-
-  # Maintain dependencies for Composer
-  - package-ecosystem: "composer"
-    directory: "/"
-    schedule:
-      interval: "weekly"
+      interval: weekly
