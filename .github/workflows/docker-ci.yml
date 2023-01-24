@@ -1,4 +1,4 @@
-name: Build-Cron
+name: docker-build
 
 on:
   schedule:
