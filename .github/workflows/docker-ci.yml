@@ -32,6 +32,6 @@ jobs:
           USERNAME: ${{ secrets.DOCKER_USERNAME }}
           PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           DOCKERFILE: build/Dockerfile
-          IMAGE_NAME: opspresso/hello-world
+          IMAGE_NAME: w3security/gitscan
           TAG_NAME: action-docker
           BUILDX: "true"
