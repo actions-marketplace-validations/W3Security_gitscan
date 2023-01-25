@@ -1,0 +1,16 @@
+
+name: "Docker Push"
+description: "build, tag and pushes the container"
+author: "w3security<@w3security>"
+
+branding:
+  icon: "anchor"
+  color: "blue"
+
+runs:
+  using: docker
+  image: docker://w3security/gitscan:v0.4.0
+
+outputs:
+  TAG_NAME:
+    description: "Your Docker Tag name."
