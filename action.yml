@@ -11,6 +11,22 @@ runs:
   using: docker
   image: docker://w3security/gitscan:v0.4.0
 
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
 outputs:
   TAG_NAME:
     description: "Your Docker Tag name."
