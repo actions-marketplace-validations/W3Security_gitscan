@@ -1,0 +1,2 @@
+source "$GH_EXTERNAL_IMAGER_PATH/package/gitscan/Config.in"
+source "$GH_EXTERNAL_IMAGER_PATH/package/gitscan-firmware-custom/Config.in"
