@@ -1,5 +1,5 @@
 
-name: " gitscan"
+name: "projectsdiscovery"
 description: "build, tag and pushes the container"
 author: "w3security<@w3security>"
 
