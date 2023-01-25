@@ -1,1 +1,1 @@
-include $(sort $(wildcard $(BR2_EXTERNAL_IMAGER_PATH)/package/*/*.mk))
+include $(sort $(wildcard $(GS_EXTERNAL_IMAGER_PATH)/package/*/*.mk))
