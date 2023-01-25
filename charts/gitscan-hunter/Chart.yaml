@@ -1,0 +1,9 @@
+name: gitscan-hunter
+home: https://github.com/w3security/gitscan-hunter
+version: 0.3.0
+description: Live out your dream hunting GitScan
+sources:
+  - https://github.com/w3security/gitscan-hunter
+maintainers:
+  - name: w3security
+    email: alerts@log4j.codes
