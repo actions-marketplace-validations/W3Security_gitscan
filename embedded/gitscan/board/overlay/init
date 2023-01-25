@@ -28,4 +28,4 @@ if grep -q blockingconsole /proc/cmdline; then
     /sbin/getty -L console 0 vt100
 fi
 
-/etc/init.d/S99gitscan-imager start
+/etc/init.d/S99gitscan start
